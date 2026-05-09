@@ -7,10 +7,11 @@ import org.apache.logging.log4j.Logger;
 
 public class ScrapTech implements ModInitializer {
 	public static final String MOD_ID = "scraptech";
-
-	// This logger is used to write text to the console and the log file.
-	// It is considered best practice to use your mod id as the logger's name.
-	// That way, it's clear which mod wrote info, warnings, and errors.
+	public static final Item ROUGH_FABRIC = Registry.register(
+        Registry.ITEM,
+        new Identifier("scraptech", "rough_fabric"),
+        new Item(new Item.Settings().group(ItemGroup.MISC))
+    );
 	public static final Logger LOGGER = LogManager.getLogger(MOD_ID);
 
 	@Override
@@ -20,11 +21,5 @@ public class ScrapTech implements ModInitializer {
 		// Proceed with mild caution.
 
 		LOGGER.info("Hello Fabric world!");
-		public static final Item ROUGH_FABRIC = new Item(new Item.Settings().group(ItemGroup.MISC));
-		public static final Item ROUGH_FABRIC = Registry.register(
-		    Registry.ITEM,
-		    new Identifier("scraptech", "rough_fabric"),
-	  	    new Item(new Item.Settings().group(ItemGroup.MISC))
-		);
 	}
 }
