@@ -1,25 +1,29 @@
 package com.pentaminer.scraptech;
 
 import net.fabricmc.api.ModInitializer;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemGroup;
+import net.minecraft.util.Identifier;
+import net.minecraft.util.registry.Registry;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 public class ScrapTech implements ModInitializer {
-	public static final String MOD_ID = "scraptech";
-	public static final Item ROUGH_FABRIC = Registry.register(
-        Registry.ITEM,
-        new Identifier("scraptech", "rough_fabric"),
-        new Item(new Item.Settings().group(ItemGroup.MISC))
-    );
-	public static final Logger LOGGER = LogManager.getLogger(MOD_ID);
 
-	@Override
-	public void onInitialize() {
-		// This code runs as soon as Minecraft is in a mod-load-ready state.
-		// However, some things (like resources) may still be uninitialized.
-		// Proceed with mild caution.
+    public static final String MOD_ID = "scraptech";
+    public static Item ROUGH_FABRIC;
+    public static final Logger LOGGER = LogManager.getLogger(MOD_ID);
 
-		LOGGER.info("Hello Fabric world!");
-	}
+    @Override
+    public void onInitialize() {
+
+        ROUGH_FABRIC = Registry.register(
+            Registry.ITEM,
+            new Identifier(MOD_ID, "rough_fabric"),
+            new Item(new Item.Settings().group(ItemGroup.MISC))
+        );
+
+        LOGGER.info("Hello Fabric world!");
+    }
 }
