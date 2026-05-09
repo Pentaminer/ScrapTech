@@ -20,5 +20,11 @@ public class ScrapTech implements ModInitializer {
 		// Proceed with mild caution.
 
 		LOGGER.info("Hello Fabric world!");
+		public static final Item ROUGH_FABRIC = new Item(new Item.Settings().group(ItemGroup.MISC));
+		public static final Item ROUGH_FABRIC = Registry.register(
+		    Registry.ITEM,
+		    new Identifier("scraptech", "rough_fabric"),
+	  	    new Item(new Item.Settings().group(ItemGroup.MISC))
+		);
 	}
 }
