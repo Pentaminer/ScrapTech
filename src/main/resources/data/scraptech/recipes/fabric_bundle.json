@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "FFF",
+    "FFF",
+    "FFF"
+  ],
+  "key": {
+    "F": {
+      "item": "scraptech:rough_fabric"
+    }
+  },
+  "result": {
+    "item": "scraptech:rough_fabric_block",
+    "count": 1
+  }
+}
