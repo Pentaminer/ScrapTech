@@ -10,6 +10,8 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
+import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
+import net.minecraft.item.ItemStack;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -17,6 +19,10 @@ import org.apache.logging.log4j.Logger;
 public class ScrapTech implements ModInitializer {
 
     public static final String MOD_ID = "scraptech";
+    public static final ItemGroup SCRAPTECH_GROUP = FabricItemGroupBuilder.build(
+    new Identifier(MOD_ID, "scraptech"),
+    () -> new ItemStack(ROUGH_FABRIC) // иконка вкладки
+    );
     public static final Logger LOGGER = LogManager.getLogger(MOD_ID);
 
     // =========================
@@ -25,7 +31,7 @@ public class ScrapTech implements ModInitializer {
     public static final Item ROUGH_FABRIC = Registry.register(
             Registry.ITEM,
             new Identifier(MOD_ID, "rough_fabric"),
-            new Item(new Item.Settings().group(ItemGroup.MISC))
+            new Item(new Item.Settings().group(SCRAPTECH_GROUP))
     );
 
     // =========================
@@ -40,7 +46,7 @@ public class ScrapTech implements ModInitializer {
     public static final Item ROUGH_FABRIC_BLOCK_ITEM = Registry.register(
             Registry.ITEM,
             new Identifier(MOD_ID, "rough_fabric_block"),
-            new BlockItem(ROUGH_FABRIC_BLOCK, new Item.Settings().group(ItemGroup.MISC))
+            new BlockItem(ROUGH_FABRIC_BLOCK, new Item.Settings().group(SCRAPTECH_GROUP))
     );
 
     // =========================
