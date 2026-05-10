@@ -1,4 +1,6 @@
 {
   "item.scraptech.rough_fabric": "Rough Fabric",
-  "block.scraptech.rough_fabric_block": "Fabric Bundle"
+  "item.scraptech.rose_gold_ingot": "Rose gold ingot",
+  "block.scraptech.rough_fabric_block": "Fabric Bundle",
+  "itemGroup.scraptech.scraptech": "ScrapTech"
 }
