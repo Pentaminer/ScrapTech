@@ -64,7 +64,7 @@ public class ScrapTech implements ModInitializer {
     public static final Item ROSE_GOLD_BLOCK_ITEM = Registry.register(
         Registry.ITEM,
         new Identifier(MOD_ID, "rose_gold_block"),
-        new BlockItem(BLOCK_NAME, new Item.Settings().group(SCRAPTECH_GROUP))
+        new BlockItem(ROSE_GOLD_BLOCK, new Item.Settings().group(SCRAPTECH_GROUP))
     );
 
     // =========================
