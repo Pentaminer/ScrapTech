@@ -3,7 +3,7 @@ package com.pentaminer.scraptech;
 import net.fabricmc.api.ModInitializer;
 
 import net.minecraft.block.Block;
-import net.minecraft.block.BlockSoundGroup;
+import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.block.Material;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.item.BlockItem;
@@ -58,7 +58,7 @@ public class ScrapTech implements ModInitializer {
     public static final Block ROSE_GOLD_BLOCK = Registry.register(
         Registry.BLOCK,
         new Identifier(MOD_ID, "rose_gold_block"),
-        new Block(AbstractBlock.Settings.of(Material.METAL).strength(1.0f))
+        new Block(AbstractBlock.Settings.of(Material.METAL).strength(1.0f).sounds(BlockSoundGroup.METAL))
     );
 
     public static final Item ROSE_GOLD_BLOCK_ITEM = Registry.register(
