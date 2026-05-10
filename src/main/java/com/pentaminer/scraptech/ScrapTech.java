@@ -20,8 +20,8 @@ public class ScrapTech implements ModInitializer {
 
     public static final String MOD_ID = "scraptech";
     public static final ItemGroup SCRAPTECH_GROUP = FabricItemGroupBuilder.build(
-    new Identifier(MOD_ID, "scraptech"),
-    () -> new ItemStack(ROUGH_FABRIC) // иконка вкладки
+        new Identifier(MOD_ID, "scraptech"),
+        () -> new ItemStack(ROUGH_FABRIC) // иконка вкладки
     );
     public static final Logger LOGGER = LogManager.getLogger(MOD_ID);
 
