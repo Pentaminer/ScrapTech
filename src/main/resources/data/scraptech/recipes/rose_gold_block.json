@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XXX",
+    "XXX",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "scraptech:rose_gold_ingot"
+    }
+  },
+  "result": {
+    "item": "scraptech:rose_gold_block",
+    "count": 1
+  }
+}
