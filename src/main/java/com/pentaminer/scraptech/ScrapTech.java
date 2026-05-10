@@ -3,7 +3,7 @@ package com.pentaminer.scraptech;
 import net.fabricmc.api.ModInitializer;
 
 import net.minecraft.block.Block;
-import net.minecraft.block.Sound;
+import net.minecraft.block.BlockSoundGroup;
 import net.minecraft.block.Material;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.item.BlockItem;
