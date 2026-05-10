@@ -15,6 +15,14 @@ import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 
+import net.minecraft.item.SwordItem;
+import net.minecraft.item.PickaxeItem;
+import net.minecraft.item.AxeItem;
+import net.minecraft.item.ShovelItem;
+import net.minecraft.item.HoeItem;
+import net.minecraft.item.ToolMaterial;
+import net.minecraft.item.ToolMaterials;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -39,6 +47,16 @@ public class ScrapTech implements ModInitializer {
         Registry.ITEM,
         new Identifier(MOD_ID, "rose_gold_ingot"),
         new Item(new Item.Settings().group(SCRAPTECH_GROUP))
+    );
+    public static final Item ROSE_GOLD_PICKAXE = Registry.register(
+        Registry.ITEM,
+        new Identifier(MOD_ID, "rose_gold_pickaxe"),
+        new PickaxeItem(
+            ToolMaterials.IRON,
+            3,
+            -2.8f,
+            new Item.Settings().group(SCRAPTECH_GROUP)
+        )
     );
 
     // =========================
