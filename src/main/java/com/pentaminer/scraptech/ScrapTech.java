@@ -54,7 +54,7 @@ public class ScrapTech implements ModInitializer {
     public static final Item ROSE_GOLD_PICKAXE = Registry.register(
         Registry.ITEM,
         new Identifier(MOD_ID, "rose_gold_pickaxe"),
-        new PickaxeItem(
+        new ModPickaxeItem(
             ROSE_GOLD,
             3,
             -2.8f,
