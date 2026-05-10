@@ -34,6 +34,11 @@ public class ScrapTech implements ModInitializer {
             new Identifier(MOD_ID, "rough_fabric"),
             new Item(new Item.Settings().group(SCRAPTECH_GROUP))
     );
+    public static final Item ROSE_GOLD_INGOT = Registry.register(
+        Registry.ITEM,
+        new Identifier(MOD_ID, "rose_gold_ingot"),
+        new Item(new Item.Settings().group(SCRAPTECH_GROUP))
+    );
 
     // =========================
     // BLOCK
