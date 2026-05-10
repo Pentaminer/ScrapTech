@@ -3,6 +3,7 @@ package com.pentaminer.scraptech.material;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.item.Items;
+import com.pentaminer.scraptech.ScrapTech;
 
 public class RoseGoldMaterial implements ToolMaterial {
 
