@@ -23,6 +23,8 @@ import net.minecraft.item.HoeItem;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.item.ToolMaterials;
 
+import com.pentaminer.scraptech.material.RoseGoldMaterial;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
