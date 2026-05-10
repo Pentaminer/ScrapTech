@@ -30,6 +30,7 @@ public class ScrapTech implements ModInitializer {
 
     public static final String MOD_ID = "scraptech";
     public static final Logger LOGGER = LogManager.getLogger(MOD_ID);
+    public static final ToolMaterial ROSE_GOLD = new RoseGoldMaterial();
     public static final ItemGroup SCRAPTECH_GROUP = FabricItemGroupBuilder.build(
         new Identifier(MOD_ID, "scraptech"),
         () -> new ItemStack(Items.REDSTONE) // иконка вкладки
@@ -52,7 +53,7 @@ public class ScrapTech implements ModInitializer {
         Registry.ITEM,
         new Identifier(MOD_ID, "rose_gold_pickaxe"),
         new PickaxeItem(
-            ToolMaterials.IRON,
+            ROSE_GOLD,
             3,
             -2.8f,
             new Item.Settings().group(SCRAPTECH_GROUP)
