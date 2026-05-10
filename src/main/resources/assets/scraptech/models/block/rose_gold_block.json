@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "scraptech:block/rose_gold_block"
+  }
+}
